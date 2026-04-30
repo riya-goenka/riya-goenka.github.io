@@ -1,77 +1,322 @@
-Riya Goenka
-EXPERIENCE
-WORK
-SKILLS
-CONTACT
-NYU STERN · BTE · CLASS OF 2029
-Riya Goenka
-Freshman at NYU Stern with a 4.0 GPA, building at the intersection of product, finance, and social impact. I've consulted on product strategy, interned at EY and NephroPlus, and founded a skincare brand employing rural women in India.
-GET IN TOUCH
-VIEW WORK
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riya Goenka</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --cream: #FAF8F4;
+    --ink: #1A1814;
+    --muted: #7A7670;
+    --accent: #C4956A;
+    --accent-light: #F0E8DF;
+    --border: rgba(26,24,20,0.12);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.25rem 4rem;
+    background: rgba(250,248,244,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 0.5px solid var(--border);
+  }
+  .nav-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem; font-weight: 400; letter-spacing: 0.04em;
+  }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a {
+    text-decoration: none; color: var(--muted);
+    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 8rem 4rem 5rem;
+    position: relative;
+  }
+  .hero-tag {
+    font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 300; line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin-bottom: 2rem;
+  }
+  .hero h1 em { font-style: italic; color: var(--accent); }
+  .hero-bio {
+    max-width: 520px;
+    color: var(--muted);
+    font-size: 1rem; line-height: 1.8;
+    margin-bottom: 2.5rem;
+  }
+  .hero-links { display: flex; gap: 1.5rem; align-items: center; }
+  .btn {
+    display: inline-block; text-decoration: none;
+    padding: 0.75rem 1.75rem;
+    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+    transition: all 0.2s;
+  }
+  .btn-primary { background: var(--ink); color: var(--cream); }
+  .btn-primary:hover { background: var(--accent); }
+  .btn-ghost { border: 0.5px solid var(--border); color: var(--ink); }
+  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+  .hero-scroll {
+    position: absolute; right: 4rem; bottom: 5rem;
+    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    color: var(--muted); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .scroll-line {
+    width: 0.5px; height: 60px; background: var(--border);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+  @keyframes scrollPulse {
+    0%,100% { opacity: 0.3; transform: scaleY(1); }
+    50% { opacity: 1; transform: scaleY(0.6); }
+  }
+  .headshot-frame {
+    position: absolute; right: 8rem; top: 50%; transform: translateY(-50%);
+    width: 340px; height: 420px;
+    border: 0.5px solid var(--border);
+    overflow: hidden;
+    background: var(--accent-light);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .headshot-frame img { width: 100%; height: 100%; object-fit: cover; }
+  .headshot-placeholder {
+    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    color: var(--muted);
+  }
+  .headshot-placeholder svg { opacity: 0.4; }
+  .headshot-placeholder span { font-size: 0.75rem; letter-spacing: 0.08em; }
+  section { padding: 6rem 4rem; }
+  .section-label {
+    font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 3rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .section-label::after {
+    content: ''; flex: 1; max-width: 60px;
+    height: 0.5px; background: var(--accent);
+  }
+  .experience { border-top: 0.5px solid var(--border); }
+  .exp-item { padding: 2rem 0; border-top: 0.5px solid var(--border); display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; max-width: 900px; }
+  .exp-company { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; margin-bottom: 0.25rem; }
+  .exp-role { font-size: 0.8rem; color: var(--muted); letter-spacing: 0.05em; }
+  .exp-date { font-size: 0.75rem; color: var(--accent); margin-top: 0.5rem; letter-spacing: 0.05em; }
+  .exp-desc { color: var(--muted); font-size: 0.9rem; line-height: 1.8; }
+  .exp-desc ul { padding-left: 1rem; }
+  .exp-desc li { margin-bottom: 0.4rem; }
+  .projects { background: var(--ink); color: var(--cream); }
+  .projects .section-label { color: var(--accent); }
+  .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px; background: rgba(255,255,255,0.08); }
+  .project-card { background: var(--ink); padding: 2.5rem; position: relative; overflow: hidden; transition: background 0.3s; }
+  .project-card:hover { background: #252218; }
+  .project-num { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 300; opacity: 0.15; position: absolute; top: 1.5rem; right: 2rem; line-height: 1; }
+  .project-tag { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
+  .project-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; margin-bottom: 1rem; color: var(--cream); }
+  .project-card p { font-size: 0.875rem; color: rgba(250,248,244,0.5); line-height: 1.75; }
+  .project-img { width: 100%; height: 160px; object-fit: cover; margin-top: 1.5rem; opacity: 0.6; border: 0.5px solid rgba(255,255,255,0.08); }
+  .project-img-placeholder { width: 100%; height: 120px; margin-top: 1.5rem; border: 0.5px dashed rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 0.7rem; letter-spacing: 0.1em; color: rgba(255,255,255,0.2); text-transform: uppercase; }
+  .skills { border-top: 0.5px solid var(--border); }
+  .skills-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 900px; }
+  .skills-group h4 { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.25rem; }
+  .skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .skill-tag { padding: 0.4rem 1rem; border: 0.5px solid var(--border); font-size: 0.8rem; color: var(--ink); transition: all 0.2s; }
+  .skill-tag:hover { border-color: var(--accent); color: var(--accent); }
+  .contact { background: var(--accent-light); text-align: center; }
+  .contact h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 5vw, 4rem); font-weight: 300; margin-bottom: 1.5rem; line-height: 1.1; }
+  .contact h2 em { font-style: italic; }
+  .contact p { color: var(--muted); max-width: 400px; margin: 0 auto 2.5rem; }
+  .contact-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+  .contact-link { text-decoration: none; color: var(--ink); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; border-bottom: 0.5px solid var(--border); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
+  .contact-link:hover { color: var(--accent); border-color: var(--accent); }
+  footer { padding: 2rem 4rem; border-top: 0.5px solid var(--border); display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--muted); letter-spacing: 0.05em; }
+  .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
 
-SCROLL
+<nav>
+  <div class="nav-name">Riya Goenka</div>
+  <div class="nav-links">
+    <a href="#experience">Experience</a>
+    <a href="#projects">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
+<section class="hero">
+  <div class="hero-tag">NYU Stern · BTE · Class of 2029</div>
+  <h1>Riya<br><em>Goenka</em></h1>
+  <p class="hero-bio">Freshman at NYU Stern with a 4.0 GPA, building at the intersection of product, finance, and social impact. I've consulted on product strategy, interned at EY and NephroPlus, and founded a skincare brand employing rural women in India.</p>
+  <div class="hero-links">
+    <a href="#contact" class="btn btn-primary">Get in touch</a>
+    <a href="#projects" class="btn btn-ghost">View work</a>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    scroll
+  </div>
+  <div class="headshot-frame">
+    <img src="images/headshot.jpg" alt="Riya Goenka headshot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="headshot-placeholder">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="18" r="10" stroke="#7A7670" stroke-width="1"/>
+        <path d="M4 44c0-11 9-18 20-18s20 7 20 18" stroke="#7A7670" stroke-width="1" fill="none"/>
+      </svg>
+      <span>Add headshot.jpg</span>
+    </div>
+  </div>
+</section>
 
-Add headshot.jpg
-EXPERIENCE
-ArtWrk
-Product Management Consultant
-Nov 2025
-	•	Led product strategy and designed UI wireframes in Figma; delivered a 68-slide pitch deck and GTM plan
-	•	Conducted 30+ interviews and analyzed 200+ survey responses to shape insight-driven product features
-	•	Won the ArtWrk category at the 2025 BTE Design Sprint, selected over 3 competing teams
-NephroPlus
-Finance Intern
-Mar – Aug 2024
-	•	Assisted CFO with financial modeling, valuation research, and M&A due diligence for a Southeast Asia acquisition
-	•	Analyzed KPIs from 300+ dialysis centers to produce a gap-analysis report informing IPO readiness strategy
-Ernst & Young
-Next-Gen Tech Intern
-Dec 2023 – Jan 2024
-	•	Tested AI and robotics tools for invoice automation, data extraction, and workflow optimization
-	•	Built a low-code prototype automating form routing and data entry across finance and healthcare workflows
-SELECTED WORK
-01
-PRODUCT · UX
-ArtWrk Design Sprint
-Led end-to-end product strategy for a creative marketplace — from 30+ user interviews to a 68-slide pitch deck that won the 2025 BTE Design Sprint.
+<section class="experience" id="experience">
+  <div class="section-label">Experience</div>
+  <div class="exp-item fade-in">
+    <div class="exp-meta">
+      <div class="exp-company">ArtWrk</div>
+      <div class="exp-role">Product Management Consultant</div>
+      <div class="exp-date">Nov 2025</div>
+    </div>
+    <div class="exp-desc">
+      <ul>
+        <li>Led product strategy and designed UI wireframes in Figma; delivered a 68-slide pitch deck and GTM plan</li>
+        <li>Conducted 30+ interviews and analyzed 200+ survey responses to shape insight-driven product features</li>
+        <li>Won the ArtWrk category at the 2025 BTE Design Sprint, selected over 3 competing teams</li>
+      </ul>
+    </div>
+  </div>
+  <div class="exp-item fade-in">
+    <div class="exp-meta">
+      <div class="exp-company">NephroPlus</div>
+      <div class="exp-role">Finance Intern</div>
+      <div class="exp-date">Mar – Aug 2024</div>
+    </div>
+    <div class="exp-desc">
+      <ul>
+        <li>Assisted CFO with financial modeling, valuation research, and M&A due diligence for a Southeast Asia acquisition</li>
+        <li>Analyzed KPIs from 300+ dialysis centers to produce a gap-analysis report informing IPO readiness strategy</li>
+      </ul>
+    </div>
+  </div>
+  <div class="exp-item fade-in">
+    <div class="exp-meta">
+      <div class="exp-company">Ernst & Young</div>
+      <div class="exp-role">Next-Gen Tech Intern</div>
+      <div class="exp-date">Dec 2023 – Jan 2024</div>
+    </div>
+    <div class="exp-desc">
+      <ul>
+        <li>Tested AI and robotics tools for invoice automation, data extraction, and workflow optimization</li>
+        <li>Built a low-code prototype automating form routing and data entry across finance and healthcare workflows</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-02
-ENTREPRENEURSHIP · SOCIAL IMPACT
-Sundara Skincare
-Founded an Indian-ingredient skincare brand. Employed 20+ rural women, sold 2,000+ products to 350+ customers, and offered $250 microloans to women entrepreneurs.
+<section class="projects" id="projects">
+  <div class="section-label">Selected Work</div>
+  <div class="projects-grid">
+    <div class="project-card fade-in">
+      <div class="project-num">01</div>
+      <div class="project-tag">Product · UX</div>
+      <h3>ArtWrk Design Sprint</h3>
+      <p>Led end-to-end product strategy for a creative marketplace — from 30+ user interviews to a 68-slide pitch deck that won the 2025 BTE Design Sprint.</p>
+      <img src="images/project-1.jpg" alt="ArtWrk design sprint project" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\'>Add project-1.jpg</div>'">
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">02</div>
+      <div class="project-tag">Entrepreneurship · Social Impact</div>
+      <h3>Sundara Skincare</h3>
+      <p>Founded an Indian-ingredient skincare brand. Employed 20+ rural women, sold 2,000+ products to 350+ customers, and offered $250 microloans to women entrepreneurs.</p>
+      <img src="images/project-2.jpg" alt="Sundara Skincare brand" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\'>Add project-2.jpg</div>'">
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">03</div>
+      <div class="project-tag">Data Science · ML</div>
+      <h3>Hotel Booking ML Model</h3>
+      <p>Built Decision Tree, Random Forest, and XGBoost models to predict hotel booking cancellations using 119,000+ real-world reservations. EDA in Python.</p>
+      <img src="images/project-3.jpg" alt="ML model project" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\'>Add project-3.jpg</div>'">
+    </div>
+    <div class="project-card fade-in">
+      <div class="project-num">04</div>
+      <div class="project-tag">Policy · Social Impact</div>
+      <h3>Civitas</h3>
+      <p>Co-president of a policy and social impact org. Expanded e-waste recycling to 1M+ residents, taught coding to 200+ students, and amended legislation protecting ragpickers across India.</p>
+      <img src="images/project-4.jpg" alt="Civitas social impact project" class="project-img" onerror="this.outerHTML='<div class=\'project-img-placeholder\'>Add project-4.jpg</div>'">
+    </div>
+  </div>
+</section>
 
-03
-DATA SCIENCE · ML
-Hotel Booking ML Model
-Built Decision Tree, Random Forest, and XGBoost models to predict hotel booking cancellations using 119,000+ real-world reservations. EDA in Python.
+<section class="skills" id="skills">
+  <div class="section-label">Skills & Tools</div>
+  <div class="skills-layout">
+    <div class="skills-group fade-in">
+      <h4>Technical</h4>
+      <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Excel</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Data Analysis</span>
+        <span class="skill-tag">Financial Modeling</span>
+        <span class="skill-tag">Low-code / Automation</span>
+      </div>
+    </div>
+    <div class="skills-group fade-in">
+      <h4>Business</h4>
+      <div class="skills-list">
+        <span class="skill-tag">Product Strategy</span>
+        <span class="skill-tag">UI/UX Research</span>
+        <span class="skill-tag">GTM Planning</span>
+        <span class="skill-tag">M&A Analysis</span>
+        <span class="skill-tag">Canva</span>
+        <span class="skill-tag">Notion</span>
+        <span class="skill-tag">PowerPoint</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-04
-POLICY · SOCIAL IMPACT
-Civitas
-Co-president of a policy and social impact org. Expanded e-waste recycling to 1M+ residents, taught coding to 200+ students, and amended legislation protecting ragpickers across India.
+<section class="contact" id="contact">
+  <h2>Let's <em>work</em><br>together</h2>
+  <p>Open to internships, research, and projects at the intersection of product, finance, and impact.</p>
+  <div class="contact-links">
+    <a href="mailto:riyaprashant.goenka@stern.nyu.edu" class="contact-link">Email</a>
+    <a href="https://linkedin.com/in/riyagoenka" class="contact-link" target="_blank">LinkedIn</a>
+    <a href="resume.pdf" class="contact-link">Resume</a>
+  </div>
+</section>
 
-SKILLS & TOOLS
-TECHNICAL
-Python
-Excel
-Figma
-Machine Learning
-Data Analysis
-Financial Modeling
-Low-code / Automation
-BUSINESS
-Product Strategy
-UI/UX Research
-GTM Planning
-M&A Analysis
-Canva
-Notion
-PowerPoint
-Let's work together
-Open to internships, research, and projects at the intersection of product, finance, and impact.
-EMAIL
-LINKEDIN
-RESUME
-Riya Goenka © 2025
-NYU Stern · BTE
+<footer>
+  <span>Riya Goenka © 2025</span>
+  <span>NYU Stern · BTE</span>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
